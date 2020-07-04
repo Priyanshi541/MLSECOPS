@@ -1,9 +1,9 @@
 
 import pandas as pd
 
-dataset = pd.read_csv('logs.csv' , sep='\s+',header=None)
+dataset = pd.read_csv('/var/www/html/logs.csv' , sep='\s+',header=None)
 
-dataset.columns=["IP","Dash","Hyphen","Date","0000","Get","/","Server","Status","Length","Site","a","b","c","d","e","f","g","h","i","j","k","l"]
+dataset.columns=["IP","Dash","Hyphen","Date","0000","Get","Server","Status","Length","Site"]
 
 dataset=dataset[["IP","Date","Status"]]
 
